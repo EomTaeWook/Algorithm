@@ -17,7 +17,6 @@
 //10  11  12  13  14
 
 #include "stdafx.h"
-#include<string.h>
 #include<stdio.h>
 #include<vector>
 int maxDepth = 5;
@@ -25,11 +24,9 @@ std::vector<int> memo;
 std::vector<int> list;
 int Solve(int depth, int sum, int idx)
 {
-	if (depth > maxDepth) return sum;
 	if (idx + depth >= list.size()) return sum;
 	if (idx + depth + 1 >= list.size()) return sum;
-	if (memo[idx] != -1) 
-		return memo[idx];
+	if (memo[idx] != -1) return memo[idx];
 	int left = Solve(depth + 1, list[idx + depth], idx + depth) + sum;
 	int right = Solve(depth + 1, list[idx + depth + 1], idx + depth + 1) + sum;
 	return memo[idx] = left > right ? left : right;
