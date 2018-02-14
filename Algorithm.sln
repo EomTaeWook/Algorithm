@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BJ", "BJ", "{89CD928F-BF61-
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "53.VaildTime", "Algorithm\CodeFights\53.vaildtime\53.vaildtime.vcxproj", "{771D20A3-A82C-49F3-912A-1CB04DB81B9D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1932.숫자삼각형", "1932.숫자삼각형\1932.숫자삼각형.vcxproj", "{FA8D30DE-C2B2-437B-B107-0E1F936FFE9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,12 +59,23 @@ Global
 		{771D20A3-A82C-49F3-912A-1CB04DB81B9D}.Release|x64.Build.0 = Release|x64
 		{771D20A3-A82C-49F3-912A-1CB04DB81B9D}.Release|x86.ActiveCfg = Release|Win32
 		{771D20A3-A82C-49F3-912A-1CB04DB81B9D}.Release|x86.Build.0 = Release|Win32
+		{FA8D30DE-C2B2-437B-B107-0E1F936FFE9A}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{FA8D30DE-C2B2-437B-B107-0E1F936FFE9A}.Debug|x64.ActiveCfg = Debug|x64
+		{FA8D30DE-C2B2-437B-B107-0E1F936FFE9A}.Debug|x64.Build.0 = Debug|x64
+		{FA8D30DE-C2B2-437B-B107-0E1F936FFE9A}.Debug|x86.ActiveCfg = Debug|Win32
+		{FA8D30DE-C2B2-437B-B107-0E1F936FFE9A}.Debug|x86.Build.0 = Debug|Win32
+		{FA8D30DE-C2B2-437B-B107-0E1F936FFE9A}.Release|Any CPU.ActiveCfg = Release|Win32
+		{FA8D30DE-C2B2-437B-B107-0E1F936FFE9A}.Release|x64.ActiveCfg = Release|x64
+		{FA8D30DE-C2B2-437B-B107-0E1F936FFE9A}.Release|x64.Build.0 = Release|x64
+		{FA8D30DE-C2B2-437B-B107-0E1F936FFE9A}.Release|x86.ActiveCfg = Release|Win32
+		{FA8D30DE-C2B2-437B-B107-0E1F936FFE9A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{771D20A3-A82C-49F3-912A-1CB04DB81B9D} = {B3D2F5A3-D31E-434A-BE83-80B27D2EAA73}
+		{FA8D30DE-C2B2-437B-B107-0E1F936FFE9A} = {89CD928F-BF61-437D-BB64-3520F09D4F1C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2E4A8E27-FD93-4267-AEEB-FA50FB6806FE}
