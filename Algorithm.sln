@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BJ", "BJ", "{89CD928F-BF61-
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "53.VaildTime", "Algorithm\CodeFights\53.vaildtime\53.vaildtime.vcxproj", "{771D20A3-A82C-49F3-912A-1CB04DB81B9D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1932.숫자삼각형", "1932.숫자삼각형\1932.숫자삼각형.vcxproj", "{FA8D30DE-C2B2-437B-B107-0E1F936FFE9A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1932.숫자삼각형", "Algorithm\BJ\1932.숫자삼각형\1932.숫자삼각형.vcxproj", "{FA8D30DE-C2B2-437B-B107-0E1F936FFE9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
