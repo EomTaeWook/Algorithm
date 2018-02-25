@@ -13,20 +13,20 @@ namespace Algorithm
         static void Main(string[] args)
         {
             PriorityQueue<int> queue = new PriorityQueue<int>(Order.Descending);
-            queue.Enqueue(5);
-            queue.Enqueue(7);
-            queue.Enqueue(3);
-            queue.Enqueue(7);
-            queue.Enqueue(2);
-            queue.Enqueue(6);
-            queue.Enqueue(9);
-            queue.Enqueue(1);
-            queue.Enqueue(4);
-            queue.Enqueue(8);
+            queue.Append(5);
+            queue.Append(7);
+            queue.Append(3);
+            queue.Append(7);
+            queue.Append(2);
+            queue.Append(6);
+            queue.Append(9);
+            queue.Append(1);
+            queue.Append(4);
+            queue.Append(8);
 
             while (queue.Count > 0)
             {
-                Console.WriteLine(queue.Dequeue());
+                Console.WriteLine(queue.Read());
             }
         }
     }

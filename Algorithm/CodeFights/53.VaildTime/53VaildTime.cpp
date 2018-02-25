@@ -15,6 +15,8 @@ bool validTime(std::string time) {
 int main()
 {
 	validTime("24:00");
+
+	
     return 0;
 }
 
