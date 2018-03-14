@@ -32,8 +32,7 @@ namespace Algorithm
             ConcreateObserverA concreateObserverA = new ConcreateObserverA();
             ConcreateObserverB concreateObserverB = new ConcreateObserverB();
 
-            subject.Add(concreateObserverA);
-            subject.Add(concreateObserverB);
+            subject.Add(concreateObserverA).Add(concreateObserverB);
 
             subject.Notify();
 
