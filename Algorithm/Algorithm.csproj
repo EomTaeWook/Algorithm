@@ -43,6 +43,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataStructure\PriorityQueue.cs" />
+    <Compile Include="DesignPattern\Command\Example.cs" />
+    <Compile Include="DesignPattern\Command\ICommand.cs" />
+    <Compile Include="DesignPattern\Command\IReceiver.cs" />
+    <Compile Include="DesignPattern\Observer\Example.cs" />
     <Compile Include="DesignPattern\Observer\IObserver.cs" />
     <Compile Include="DesignPattern\Observer\Subject.cs" />
     <Compile Include="Program.cs" />
