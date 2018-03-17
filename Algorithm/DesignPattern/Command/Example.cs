@@ -25,8 +25,8 @@ namespace Algorithm.DesignPattern.Command
             {
                 if (command is PowerOnCommand)
                 {
-                    command.Execute();
-                    break;
+                    command.Execute(); break;
+
                 }
             }
         }
@@ -36,8 +36,7 @@ namespace Algorithm.DesignPattern.Command
             {
                 if (command is PowerOffCommand)
                 {
-                    command.Execute();
-                    break;
+                    command.Execute(); break;
                 }
             }
         }
@@ -47,8 +46,7 @@ namespace Algorithm.DesignPattern.Command
             {
                 if (command is ButtonCommand)
                 {
-                    command.Execute();
-                    break;
+                    command.Execute(); break;
                 }
             }
         }
