@@ -57,22 +57,36 @@ namespace Algorithm
     {
         static void Main(string[] args)
         {
-            //IReceiver
-            Power power = new Power();
-            Button button = new Button();
+            int[] array = new int []{ 2, 5, 3, 0, 2, 3, 0, 3};
+            List<int> list = new List<int>();
+            list.AddRange(array);
 
-            //ICommand
-            ButtonCommand buttonCommand = new ButtonCommand(button);
-            PowerOffCommand powerOffCommand = new PowerOffCommand(power);
-            PowerOnCommand powerOnCommand = new PowerOnCommand(power);
+            var sortList = CountingSort.Sort(list);
 
-            //Invoke
-            var remote = new Remote();
-            remote.Appand(buttonCommand).Appand(powerOffCommand).Appand(powerOnCommand);
+            foreach(var value in sortList)
+            {
+                Console.WriteLine(value);
+            }
 
-            remote.PowerOff();
-            remote.PowerOn();
-            remote.Click();
+
+
+
+            ////IReceiver
+            //Power power = new Power();
+            //Button button = new Button();
+
+            ////ICommand
+            //ButtonCommand buttonCommand = new ButtonCommand(button);
+            //PowerOffCommand powerOffCommand = new PowerOffCommand(power);
+            //PowerOnCommand powerOnCommand = new PowerOnCommand(power);
+
+            ////Invoke
+            //var remote = new Remote();
+            //remote.Appand(buttonCommand).Appand(powerOffCommand).Appand(powerOnCommand);
+
+            //remote.PowerOff();
+            //remote.PowerOn();
+            //remote.Click();
         }
     }
 }
