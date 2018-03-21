@@ -57,11 +57,13 @@ namespace Algorithm
     {
         static void Main(string[] args)
         {
-            int[] array = new int []{ 2, 5, 3, 0, 2, 3, 0, 3};
+            //-4 0, 2 5 6 11 18 22 51 167
+            int[] array = new int []{ 2, 5, -4, 11, 0, 18, 22, 167, 51, 6 };
+
             List<int> list = new List<int>();
             list.AddRange(array);
 
-            var sortList = CountingSort.Sort(list);
+            var sortList = RadixSort.Sort(list);
 
             foreach(var value in sortList)
             {
@@ -69,7 +71,7 @@ namespace Algorithm
             }
 
 
-
+            
 
             ////IReceiver
             //Power power = new Power();
