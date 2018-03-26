@@ -46,6 +46,9 @@
     <Compile Include="DesignPattern\Command\Example.cs" />
     <Compile Include="DesignPattern\Command\ICommand.cs" />
     <Compile Include="DesignPattern\Command\IReceiver.cs" />
+    <Compile Include="DesignPattern\FactoryMethod\Callback.cs" />
+    <Compile Include="DesignPattern\FactoryMethod\Factory.cs" />
+    <Compile Include="DesignPattern\FactoryMethod\ICallback.cs" />
     <Compile Include="DesignPattern\Observer\Example.cs" />
     <Compile Include="DesignPattern\Observer\IObserver.cs" />
     <Compile Include="DesignPattern\Observer\Subject.cs" />

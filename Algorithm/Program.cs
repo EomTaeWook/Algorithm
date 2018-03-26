@@ -1,5 +1,6 @@
 ﻿
 using Algorithm.DesignPattern.Command;
+using Algorithm.DesignPattern.FactoryMethod;
 using Algorithm.Sort;
 using DataStructure;
 using System;
@@ -57,21 +58,31 @@ namespace Algorithm
     {
         static void Main(string[] args)
         {
-            //-4 0, 2 5 6 11 18 22 51 167
-            int[] array = new int []{ 2, 5, -4, 11, 0, 18, 22, 167, 51, 6 };
 
-            List<int> list = new List<int>();
-            list.AddRange(array);
+            var factory = new Factory();
+            var callbackA = factory.Create(Factory.CallbackType.CallbackA);
+            callbackA.InitCallback();
 
-            var sortList = RadixSort.Sort(list);
+            var callbackB = factory.Create(Factory.CallbackType.CallbackB);
+            callbackB.InitCallback();
 
-            foreach(var value in sortList)
-            {
-                Console.WriteLine(value);
-            }
-
-
+            Console.ReadKey();
             
+            ////-4 0, 2 5 6 11 18 22 51 167
+            //int[] array = new int []{ 2, 5, -4, 11, 0, 18, 22, 167, 51, 6 };
+
+            //List<int> list = new List<int>();
+            //list.AddRange(array);
+
+            //var sortList = RadixSort.Sort(list);
+
+            //foreach(var value in sortList)
+            //{
+            //    Console.WriteLine(value);
+            //}
+
+
+
 
             ////IReceiver
             //Power power = new Power();
