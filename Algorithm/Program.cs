@@ -59,13 +59,35 @@ namespace Algorithm
         static void Main(string[] args)
         {
 
-            var factory = new Factory();
-            var callbackA = factory.Create(Factory.CallbackType.CallbackA);
-            callbackA.InitCallback();
+            //var factory = new Factory();
+            //var callbackA = factory.Create(Factory.CallbackType.CallbackA);
+            //callbackA.InitCallback();
 
-            var callbackB = factory.Create(Factory.CallbackType.CallbackB);
-            callbackB.InitCallback();
+            //var callbackB = factory.Create(Factory.CallbackType.CallbackB);
+            //callbackB.InitCallback();
 
+            var unSortArray = new int[,] { 
+                { 10,14,5 },
+                { 8,7,17 },
+                { 12,1,6 },
+                { 16,9,11 },
+                { 4,15,2 },
+                { 18,3,13}};
+            
+            for (int i = 0; i < unSortArray.GetLength(0); i++)
+            {
+                for (int ii = 0; ii < unSortArray.GetLength(1); ii++)
+                    Console.Write(unSortArray[i, ii] + " ");
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+            var sortList = ColumnSort.Sort(unSortArray);
+            for (int i = 0; i < sortList.GetLength(0); i++)
+            {
+                for (int ii = 0; ii < sortList.GetLength(1); ii++)
+                    Console.Write(sortList[i, ii] + " ");
+                Console.WriteLine();
+            }
             Console.ReadKey();
             
             ////-4 0, 2 5 6 11 18 22 51 167

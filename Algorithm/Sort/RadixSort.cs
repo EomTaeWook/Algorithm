@@ -8,11 +8,11 @@ namespace Algorithm.Sort
 {
     class RadixSort
     {
-        public static List<int> Sort(List<int> unsortList)
+        public static List<int> Sort(List<int> unSortList)
         {
-            return Sort(ref unsortList);
+            return Sort(ref unSortList);
         }
-        private static List<int> Sort(ref List<int> unsortList)
+        private static List<int> Sort(ref List<int> unSortList)
         {
             List<Queue<int>> _positiveBucket = new List<Queue<int>>();
             List<Queue<int>> _negativeBucket = new List<Queue<int>>();
@@ -21,31 +21,31 @@ namespace Algorithm.Sort
                 _positiveBucket.Add(new Queue<int>());
                 _negativeBucket.Add(new Queue<int>());
             }
-            var digit = unsortList.Max().ToString().Length;
+            var digit = unSortList.Max().ToString().Length;
             int div = 1, idx = -1;
             for (int i = 0; i < digit; i++, div *= 10)
             {
-                for (int ii = 0; ii < unsortList.Count; ii++)
+                for (int ii = 0; ii < unSortList.Count; ii++)
                 {
-                    idx = unsortList[ii]/ div % 10;
+                    idx = unSortList[ii]/ div % 10;
                     if (idx >= 0)
-                        _positiveBucket[idx].Enqueue(unsortList[ii]);
+                        _positiveBucket[idx].Enqueue(unSortList[ii]);
                     else
-                        _negativeBucket[idx * -1].Enqueue(unsortList[ii]);
+                        _negativeBucket[idx * -1].Enqueue(unSortList[ii]);
                 }
                 idx = 0;
                 for(int ii= _negativeBucket.Count - 1; ii>=0; ii--)
                 {
                     while (_negativeBucket[ii].Count > 0)
-                        unsortList[idx++] = _negativeBucket[ii].Dequeue();
+                        unSortList[idx++] = _negativeBucket[ii].Dequeue();
                 }
                 for (int ii = 0; ii< _positiveBucket.Count; ii++)
                 {
                     while (_positiveBucket[ii].Count > 0)
-                        unsortList[idx++] = _positiveBucket[ii].Dequeue();
+                        unSortList[idx++] = _positiveBucket[ii].Dequeue();
                 }
             }
-            return unsortList;
+            return unSortList;
         }
     }
 }

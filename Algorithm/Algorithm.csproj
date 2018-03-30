@@ -54,6 +54,7 @@
     <Compile Include="DesignPattern\Observer\Subject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sort\ColumnSort.cs" />
     <Compile Include="Sort\CountingSort.cs" />
     <Compile Include="Sort\QuickSort.cs" />
     <Compile Include="Sort\RadixSort.cs" />
