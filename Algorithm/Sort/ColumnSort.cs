@@ -10,17 +10,15 @@ namespace Algorithm.Sort
     {
         public static int[,] Sort(int[,] unSortList)
         {
-            var sortList = new int[unSortList.GetLength(0), unSortList.GetLength(1)];
-            Array.Copy(unSortList, sortList, sortList.Length);
-            Sort(ref sortList);
-            Transposed(ref sortList);
-            Sort(ref sortList);
-            ReverseTransposed(ref sortList);
-            Sort(ref sortList);
+            Sort(ref unSortList);
+            Transposed(ref unSortList);
+            Sort(ref unSortList);
+            ReverseTransposed(ref unSortList);
+            Sort(ref unSortList);
             int[,] transposedMatrix = null;
-            HalfDivideTransposed(ref sortList, out transposedMatrix);
-            ReverseHalfDivideTransposed(ref transposedMatrix, out sortList);
-            return sortList;
+            HalfDivideTransposed(ref unSortList, out transposedMatrix);
+            ReverseHalfDivideTransposed(ref transposedMatrix, out unSortList);
+            return unSortList;
         }
         private static void Sort(ref int[,] unSortList)
         {
