@@ -77,7 +77,7 @@ namespace Algorithm
             for (int i = 0; i < unSortArray.GetLength(0); i++)
             {
                 for (int ii = 0; ii < unSortArray.GetLength(1); ii++)
-                    Console.Write(unSortArray[i, ii] + " ");
+                    Console.Write(unSortArray[i, ii].ToString().PadLeft(2, ' ') + " ");
                 Console.WriteLine();
             }
             Console.WriteLine();
@@ -85,7 +85,7 @@ namespace Algorithm
             for (int i = 0; i < sortList.GetLength(0); i++)
             {
                 for (int ii = 0; ii < sortList.GetLength(1); ii++)
-                    Console.Write(sortList[i, ii] + " ");
+                    Console.Write(sortList[i, ii].ToString().PadLeft(2, ' ') + " ");
                 Console.WriteLine();
             }
             Console.ReadKey();
