@@ -41,6 +41,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2178.미로탐색", "Algori
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1011.Fly me to the Alpha Centauri", "Algorithm\BJ\1011.Fly me to the Alpha Centauri\1011.Fly me to the Alpha Centauri.vcxproj", "{0308D925-50FD-4145-AAE3-613146E6D424}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6064.카잉 달력", "Algorithm\BJ\6064.카잉 달력\6064.카잉 달력.vcxproj", "{C4DCA339-1736-45C6-B832-7CEAD9D99E2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -225,6 +227,16 @@ Global
 		{0308D925-50FD-4145-AAE3-613146E6D424}.Release|x64.Build.0 = Release|x64
 		{0308D925-50FD-4145-AAE3-613146E6D424}.Release|x86.ActiveCfg = Release|Win32
 		{0308D925-50FD-4145-AAE3-613146E6D424}.Release|x86.Build.0 = Release|Win32
+		{C4DCA339-1736-45C6-B832-7CEAD9D99E2D}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{C4DCA339-1736-45C6-B832-7CEAD9D99E2D}.Debug|x64.ActiveCfg = Debug|x64
+		{C4DCA339-1736-45C6-B832-7CEAD9D99E2D}.Debug|x64.Build.0 = Debug|x64
+		{C4DCA339-1736-45C6-B832-7CEAD9D99E2D}.Debug|x86.ActiveCfg = Debug|Win32
+		{C4DCA339-1736-45C6-B832-7CEAD9D99E2D}.Debug|x86.Build.0 = Debug|Win32
+		{C4DCA339-1736-45C6-B832-7CEAD9D99E2D}.Release|Any CPU.ActiveCfg = Release|Win32
+		{C4DCA339-1736-45C6-B832-7CEAD9D99E2D}.Release|x64.ActiveCfg = Release|x64
+		{C4DCA339-1736-45C6-B832-7CEAD9D99E2D}.Release|x64.Build.0 = Release|x64
+		{C4DCA339-1736-45C6-B832-7CEAD9D99E2D}.Release|x86.ActiveCfg = Release|Win32
+		{C4DCA339-1736-45C6-B832-7CEAD9D99E2D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -245,6 +257,7 @@ Global
 		{6C34735C-F692-48BA-862E-DCB0BCA0E5CB} = {B3D2F5A3-D31E-434A-BE83-80B27D2EAA73}
 		{75CCE6DA-7D32-4E67-AF61-FBDCBB44A919} = {89CD928F-BF61-437D-BB64-3520F09D4F1C}
 		{0308D925-50FD-4145-AAE3-613146E6D424} = {89CD928F-BF61-437D-BB64-3520F09D4F1C}
+		{C4DCA339-1736-45C6-B832-7CEAD9D99E2D} = {89CD928F-BF61-437D-BB64-3520F09D4F1C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2E4A8E27-FD93-4267-AEEB-FA50FB6806FE}
