@@ -13,11 +13,6 @@ int main()
 	{
 		scanf("%lld %lld", &s, &f);
 		dis = f - s;
-		if (dis == 1 || dis == 2)
-		{
-			printf("%lld\n", dis);
-			continue;
-		}
 		auto sqrt = (long long)std::ceil(std::sqrt(dis));
 		auto max = (long long)std::pow(sqrt, 2);
 		if (max - sqrt >= dis)
