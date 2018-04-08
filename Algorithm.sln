@@ -43,7 +43,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1011.Fly me to the Alpha Ce
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6064.카잉 달력", "Algorithm\BJ\6064.카잉 달력\6064.카잉 달력.vcxproj", "{C4DCA339-1736-45C6-B832-7CEAD9D99E2D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2438.별찍기 - 1", "2438.별찍기 - 1\2438.별찍기 - 1.vcxproj", "{9927E728-48FB-4F32-9CD9-1B82101A0C92}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2438.별찍기 - 1", "Algorithm\BJ\2438.별찍기 - 1\2438.별찍기 - 1.vcxproj", "{9927E728-48FB-4F32-9CD9-1B82101A0C92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
