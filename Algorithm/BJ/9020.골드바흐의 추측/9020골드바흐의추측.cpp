@@ -12,11 +12,8 @@ int main()
 	for (int i = 2; i <= 10000; i++)
 	{
 		if (primeNumber[i] == -1) continue;
-		for (int ii = i+1; ii < 10000; ii++)
-		{
-			if (ii % i == 0)
-				primeNumber[ii] = -1;
-		}
+		for (int ii = i + i; ii <= 10000; ii += i)
+			primeNumber[ii] = -1;
 	}
 	int t;
 	scanf("%d", &t);
