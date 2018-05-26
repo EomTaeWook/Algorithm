@@ -113,6 +113,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12.isInfiniteProcess", "Alg
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "13.arithmeticExpression", "Algorithm\CodeFights\TheCore\13.arithmeticExpression\13.arithmeticExpression.vcxproj", "{D7C41140-90D6-4CE9-ADFE-EE5614C86B3D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1504.특정한 최단 경로", "Algorithm\BJ\1504.특정한 최단 경로\1504.특정한 최단 경로.vcxproj", "{71BB9211-F53E-44B0-BE96-D12AADC4CF59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -637,6 +639,16 @@ Global
 		{D7C41140-90D6-4CE9-ADFE-EE5614C86B3D}.Release|x64.Build.0 = Release|x64
 		{D7C41140-90D6-4CE9-ADFE-EE5614C86B3D}.Release|x86.ActiveCfg = Release|Win32
 		{D7C41140-90D6-4CE9-ADFE-EE5614C86B3D}.Release|x86.Build.0 = Release|Win32
+		{71BB9211-F53E-44B0-BE96-D12AADC4CF59}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{71BB9211-F53E-44B0-BE96-D12AADC4CF59}.Debug|x64.ActiveCfg = Debug|x64
+		{71BB9211-F53E-44B0-BE96-D12AADC4CF59}.Debug|x64.Build.0 = Debug|x64
+		{71BB9211-F53E-44B0-BE96-D12AADC4CF59}.Debug|x86.ActiveCfg = Debug|Win32
+		{71BB9211-F53E-44B0-BE96-D12AADC4CF59}.Debug|x86.Build.0 = Debug|Win32
+		{71BB9211-F53E-44B0-BE96-D12AADC4CF59}.Release|Any CPU.ActiveCfg = Release|Win32
+		{71BB9211-F53E-44B0-BE96-D12AADC4CF59}.Release|x64.ActiveCfg = Release|x64
+		{71BB9211-F53E-44B0-BE96-D12AADC4CF59}.Release|x64.Build.0 = Release|x64
+		{71BB9211-F53E-44B0-BE96-D12AADC4CF59}.Release|x86.ActiveCfg = Release|Win32
+		{71BB9211-F53E-44B0-BE96-D12AADC4CF59}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -693,6 +705,7 @@ Global
 		{41FEA6EF-16E2-472B-8049-62654CF621C8} = {CEED6F36-50F8-4826-9187-FAA0A19D2A47}
 		{7A5FD81B-90AD-499A-AEB1-C713499FAD2B} = {CEED6F36-50F8-4826-9187-FAA0A19D2A47}
 		{D7C41140-90D6-4CE9-ADFE-EE5614C86B3D} = {CEED6F36-50F8-4826-9187-FAA0A19D2A47}
+		{71BB9211-F53E-44B0-BE96-D12AADC4CF59} = {89CD928F-BF61-437D-BB64-3520F09D4F1C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2E4A8E27-FD93-4267-AEEB-FA50FB6806FE}
