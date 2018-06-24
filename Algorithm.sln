@@ -127,6 +127,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11004.K번째 수", "Algori
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1780.종이의 개수", "Algorithm\BJ\1780.종이의 개수\1780.종이의 개수.vcxproj", "{01491418-E6A4-4846-80E7-6B4C7BA31684}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1920.수 찾기", "Algorithm\BJ\1920.수 찾기\1920.수 찾기.vcxproj", "{62241348-9EAE-47D7-94AB-1DCF5E08519C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -721,6 +723,16 @@ Global
 		{01491418-E6A4-4846-80E7-6B4C7BA31684}.Release|x64.Build.0 = Release|x64
 		{01491418-E6A4-4846-80E7-6B4C7BA31684}.Release|x86.ActiveCfg = Release|Win32
 		{01491418-E6A4-4846-80E7-6B4C7BA31684}.Release|x86.Build.0 = Release|Win32
+		{62241348-9EAE-47D7-94AB-1DCF5E08519C}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{62241348-9EAE-47D7-94AB-1DCF5E08519C}.Debug|x64.ActiveCfg = Debug|x64
+		{62241348-9EAE-47D7-94AB-1DCF5E08519C}.Debug|x64.Build.0 = Debug|x64
+		{62241348-9EAE-47D7-94AB-1DCF5E08519C}.Debug|x86.ActiveCfg = Debug|Win32
+		{62241348-9EAE-47D7-94AB-1DCF5E08519C}.Debug|x86.Build.0 = Debug|Win32
+		{62241348-9EAE-47D7-94AB-1DCF5E08519C}.Release|Any CPU.ActiveCfg = Release|Win32
+		{62241348-9EAE-47D7-94AB-1DCF5E08519C}.Release|x64.ActiveCfg = Release|x64
+		{62241348-9EAE-47D7-94AB-1DCF5E08519C}.Release|x64.Build.0 = Release|x64
+		{62241348-9EAE-47D7-94AB-1DCF5E08519C}.Release|x86.ActiveCfg = Release|Win32
+		{62241348-9EAE-47D7-94AB-1DCF5E08519C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
