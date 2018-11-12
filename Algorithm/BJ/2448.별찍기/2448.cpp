@@ -1,47 +1,39 @@
 #include<iostream>
-#include <string>
-#include <vector>
-
-void Star(std::vector<std::string>& output, const int&& count)
+char stars[3072][6144];
+void Star(const int& x , const int& y, const int& N)
 {
-	if (count == 1)
+	if (N == 3)
+	{
+		stars[y][x] = '*';
+		stars[y + 1][x - 1] = '*';
+		stars[y + 1][x + 1] = '*';
+		stars[y + 2][x - 2] = '*';
+		stars[y + 2][x - 1] = '*';
+		stars[y + 2][x] = '*';
+		stars[y + 2][x + 1] = '*';
+		stars[y + 2][x + 2] = '*';
 		return;
-	output.push_back(output[0] + output[0]);
-	output.push_back(output[1] + output[1]);
-	output.push_back(output[2] + output[2]);
-	Star(output, count - 1);
+	}
+	Star(x, y, N / 2);
+	Star(x - N / 2, y + N / 2, N / 2);
+	Star(x + N / 2, y + N / 2, N / 2);
 }
 
 int main()
 {
-	int arr[2][3] = { 1,2,3,4,5,6 };
 	std::ios::ios_base::sync_with_stdio(false);
-	int N = 12;
-	//std::cin >> N;
-	std::vector<std::string> ouput = 
-	{ 
-		{ "..*..." },
-		{ ".*.*.." },
-		{ "*****." }
-	};
-	if (N == 3)
+	int N = 6;
+	std::cin >> N;
+	for (int i = 0; i < N; i++)
 	{
-		for (int i = 0; i < 3; i++)
-			printf("%s\n", ouput[i].c_str());
+		for (int ii = 0; ii < N * 2 - 1; ii++)
+			stars[i][ii] = ' ';
 	}
-	else
+	Star(N - 1, 0, N);
+	for (int i = 0; i < N; i++)
 	{
-		Star(ouput, N / 3);
-		std::string space(".");
-		for (int i = 0; i < N/2; i++)
-		{
-			for (int ii = 0; ii < N / 2 - i; ii++)
-			{
-				ouput[i].insert(0, space);
-			}
-		}
-		for (int i = 0; i < N; i++)
-			printf("%s\n", ouput[i].c_str());
+		printf("%s", stars[i]);
+		printf("\n");
 	}
 	return 0;
 }

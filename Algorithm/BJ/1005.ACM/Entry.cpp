@@ -23,7 +23,7 @@ int main()
 		}
 		std::cin >> input;
 		std::queue<int> q;
-		for (int i = 1; i < building; i++)
+		for (int i = 1; i <= building; i++)
 		{
 			if (vertex[i] == 0)
 			{
