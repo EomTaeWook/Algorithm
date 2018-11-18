@@ -2,23 +2,30 @@
 #include <string.h>
 #include <algorithm>
 #include <vector>
-long long list[501] = {40, 30, 30, 50};
-long long memo[501][501];
-
-
-long long Recursive(int index, int size)
+int list[501] = {40, 30, 30, 50};
+int memo[501][501];
+int Cost(const int& start, const int& end)
 {
-	for (int i = 0; i < size; i++)
+	if (start == end)
+		return 0;
+
+	if (start + 1 == end)
+		return list[start] + list[end];
+
+	if (memo[start][end] != -1)
+		return memo[start][end];
+
+	memo[start][end] = 987654321;
+	for (int i = start; i < end; i++)
 	{
-		if (i == index)
-			continue;
 
 	}
-	return 0;
+
+	return memo[start][end];
 }
 int main()
 {
-	int t=0, tc = 1, size = 4;
+	int t=0, tc = 1, K = 4;
 	//std::cin >> tc;
 	while (t++ < tc)
 	{
@@ -28,7 +35,7 @@ int main()
 			std::cin >> list[i];*/
 		memset(memo, -1, sizeof(memo));
 
-		printf("%lld\n", Recursive(0, size));
+		printf("%d\n", Cost(0, K));
 	}
 	return 0;
 }
