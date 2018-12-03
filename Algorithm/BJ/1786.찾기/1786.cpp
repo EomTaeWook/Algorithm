@@ -18,7 +18,6 @@ int main()
 		if (P[idx] == P[i])
 			pi[i] = ++idx;
 	}
-
 	idx = 0;
 	std::vector<int> ans;
 	for (size_t i = 0; i < T.size(); i++)
